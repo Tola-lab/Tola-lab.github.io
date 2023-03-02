@@ -21,7 +21,22 @@
         }
         // background: url(../../img/header/main_bg.jpg) no-repeat;
     }
-}
+
+    .advantage {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .consultation {
+        padding-left: 50px;
+    }
+    .tittle {
+        &_left {
+            font-size: 30px;
+        }
+    }
+    }
+
 
 @media (max-width: 767px) {
 
@@ -56,9 +71,18 @@
         &__descr {
             margin-top: 20px;
         }
-    }   
-
+    } 
+    .consultation {
+        &__descr {
+            margin-top: 60px;
+        }
     }
+    .tittle {
+        &_left {
+            font-size: 25px;
+        }
+    }
+}
 
 @media (max-width: 575px) {
 
@@ -108,6 +132,23 @@
     }
     .tittle {
         font-size: 24px;
+    }
+
+    .consultation {
+        padding: 70px 50px;
+        &__descr {
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    }
+    .tittle {
+        &_left {
+            font-size: 20px;
+        }
+    }
+
+    .feed-form {
+        width: 230px;
     }
 
 }
