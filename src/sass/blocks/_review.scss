@@ -1,0 +1,38 @@
+.review {
+    position: relative;
+    padding-bottom: 41px;
+    &__name {
+        padding-left: 231px;
+        margin-top: 70px;
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: left;
+    }
+    &__subtitel {
+        padding-left: 231px;
+        margin-top: 5px;
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: left;
+    }
+    &__descr {
+        padding-left: 231px;
+        margin-top: 19px;
+        margin-bottom: 30px;
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: left;
+        max-width: 887px;
+    }
+    &__img {
+        display: block;
+        position: absolute;
+    }
+    hr {
+        height: 1px;
+        background-color: #f6f6f6;
+    }
+}
