@@ -1,7 +1,9 @@
 @media (max-width: 1199px){
-    // .promo {
-    //     background: url(../../img/header/main_bg.jpg) no-repeat;
-    // }
+    .footer {
+        &__info {
+            width: 340px;
+        }
+    }
 }
 @media (max-width: 991px) {
 
@@ -134,6 +136,15 @@
     }
     .button_mini {
         width: 100px;
+    }
+    .footer {
+        &__info {
+            width: 100%;
+            height: 220px;
+        }
+        &__addr {
+            margin-top: 15px;
+        }
     }
 }
 
@@ -287,6 +298,30 @@
             position: relative;
             width: 35%;
             height: 35%;
+        }
+    }
+    .footer {
+        height: 500px;
+        &__info {
+            height: 180px;
+        }
+        &__addr {
+            font-size: 16px;
+        }
+        &__number {
+            font-size: 16px;
+        }
+        &__social-item {
+            margin-top: 25px;
+            width: 30px;
+            height: 30px;
+            img {
+                width: 50%;
+                height: 50%;
+            }
+        }
+        &__map {
+            height: 500px;
         }
     }
 }
