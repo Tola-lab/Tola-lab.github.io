@@ -54,6 +54,33 @@
     .review {
         padding: 0 20px 0 20px;
     }
+    .modal {
+        min-height: 340px;
+        width: 300px;
+        &__subtitel {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        &__descr {
+            font-size: 13px;
+        }
+    }
+    .feed-form {
+        &_modal {
+            width: 260px;
+            margin-top: 20px;
+        }
+        input {
+            height: 45px;
+            font-size: 13px;
+        }
+    }
+    .button {
+        &_submit {
+            height: 50px;
+            font-size: 11px;
+        }
+    }
     
     }
 
@@ -322,6 +349,39 @@
         }
         &__map {
             height: 500px;
+        }
+    }
+    .modal {
+        padding: 15px 5px;
+        min-height: 265px;
+        width: 220px;
+        &__subtitel {
+            margin-top: 0;
+            font-size: 12px;
+        }
+        &__descr {
+            font-size: 11px;
+        }
+        &__close {
+            right: -31px;
+            font-size: 31px;
+        }
+    }
+    .feed-form {
+        &_modal {
+            width: 200px;
+            margin-top: 10px;
+            padding-left: 10px;
+        }
+        input {
+            height: 30px;
+            font-size: 12px;
+        }
+    }
+    .button {
+        &_submit {
+            height: 40px;
+            font-size: 10px;
         }
     }
 }

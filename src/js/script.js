@@ -33,27 +33,19 @@ $(document).ready(function(){
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__back');
 
+  // Modals
+
+  $('[data-modal=consultation]').on('click', function() {
+    $('.overlay, #consultation').fadeIn('slow');
+  });
+  $('.modal__close').on('click', function() {
+    $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+  });
+
+  $('.button_mini').each(function(i) {
+    $(this).on('click', function () {
+      $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+      $('.overlay, #order').fadeIn('slow');
+    });
+  });
 });
-
-// const slider = tns({
-//   container: '.carousel__inner',
-//   speed: 1200,
-//   items: 1,
-//   slideBy: 'page',
-//   controls: false, 
-//   nav: false, 
-//   responsive: {
-//     640: {
-//       nav: true, 
-//       controls: false
-//     }
-//   }
-// });
-
-// document.querySelector('.prev').addEventListener ('click', function () {
-//   slider.goTo('prev');
-// });
-
-// document.querySelector('.next').addEventListener ('click', function () {
-//   slider.goTo('next'); это для нативного жс
-// });
