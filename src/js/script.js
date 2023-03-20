@@ -48,4 +48,30 @@ $(document).ready(function(){
       $('.overlay, #order').fadeIn('slow');
     });
   });
+
+  function validateForm(form) {
+    $(form).validate({
+      rules: {
+        name: "required",
+        phone: "required",
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: "Пожалуйста, введите своё имя",
+        phone: "Пожалуйста, введите свой номер телефона",
+        email: {
+          required: "Пожалуйста, введите свою почту",
+          email: "в формате, example@gmail.com"
+        }
+      }
+    });
+  };
+
+  validateForm('#consultation-form');
+  validateForm('#order form');
+  validateForm('#consultation form');
+
 });

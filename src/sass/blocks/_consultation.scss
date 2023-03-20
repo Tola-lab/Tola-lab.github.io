@@ -9,4 +9,12 @@
         font-weight: 500;
         text-align: left;
     }
+    .error {
+        border: 1px solid red
+    }
+    label.error {
+        border: none;
+        font-size: 13px;
+        color: #ffffff;
+    }
 }
