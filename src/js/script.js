@@ -74,4 +74,35 @@ $(document).ready(function(){
   validateForm('#order form');
   validateForm('#consultation form');
 
+  $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+  $('form').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+      type: "POST", /* отправляем или получаем данные на сервер или с сервера */
+      url: "mailer/smart.php", /* какой обработчик будет обрабатывать данные */
+      data: $(this).serialize() /* данные, которые надо отправить на сервер */
+    }).done(function() {
+      $(this).find("input").val(""); /* после отправки данных на сервер, мы устанавливаем в вэлью в инпутах пустые поля, т.е очистим все инпуты от данных */
+      $('#consultation, #order').fadeOut();
+      $('.overlay, #thanks').fadeIn('slow');
+      $('form').trigger('reset');
+    });
+    return false;
+  });
+
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 1400 ) {
+      $('.pageup').fadeIn();
+    } else {
+      $('.pageup').fadeOut();
+    }
+  });
+
+  $("a[href=#up]").click(function(){
+    const _href = $(this).attr("href");
+    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+    return false;
+});
+
 });
