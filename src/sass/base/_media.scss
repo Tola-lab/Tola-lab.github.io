@@ -4,6 +4,9 @@
             width: 340px;
         }
     }
+    .pageup {
+        right: 40px;
+    }
 }
 @media (max-width: 991px) {
 
@@ -80,6 +83,12 @@
             height: 50px;
             font-size: 11px;
         }
+    }
+    .pageup {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
     }
     
     }
@@ -172,6 +181,10 @@
         &__addr {
             margin-top: 15px;
         }
+    }
+    .pageup {
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -383,6 +396,11 @@
             height: 40px;
             font-size: 10px;
         }
+    }
+    .pageup {
+        right: 10px;
+        width: 20px;
+        height: 20px;
     }
 }
 
